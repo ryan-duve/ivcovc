@@ -15,7 +15,7 @@
 
   <script>
     //title!
-    var title="Temperatures";
+    var title="IVC and OVC";
 
     $(function (){
       document.title=title;
@@ -25,10 +25,8 @@
     function getReportParams(){
       var reportparams={};
       reportparams['incomingDevs']=[];
-      reportparams['incomingDevs'].push('mcSi');
-      reportparams['incomingDevs'].push('evapSi');
-      reportparams['incomingDevs'].push('sepSi');
-      reportparams['incomingDevs'].push('avs47');
+      reportparams['incomingDevs'].push('IVCPressure');
+      reportparams['incomingDevs'].push('OVCPressure');
       reportparams['nData']=$("#nData-value").val();
       reportparams['endTimestamp']="now";
       return reportparams;
